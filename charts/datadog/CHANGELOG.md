@@ -1,5 +1,9 @@
 # Datadog changelog
 
+## 2.8.6
+
+* Make pod collection for the Kubernetes Explorer work with an external Cluster Agent deployment.
+
 ## 2.8.5
 
 * Allow `namespaces` in RBAC for `kubernetes_namespace_labels_as_tags`.

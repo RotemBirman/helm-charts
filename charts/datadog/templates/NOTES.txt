@@ -193,7 +193,7 @@ More information about this change: https://github.com/DataDog/helm-charts/pull/
 
 {{- end }}
 
-{{- if (and .Values.datadog.orchestratorExplorer.enabled (not .Values.clusterAgent.enabled ))}}
+{{- if (and .Values.datadog.orchestratorExplorer.enabled (not (or .Values.clusterAgent.enabled (include "existingClusterAgent-configured" .))))}}
 
 #################################################################
 ####               WARNING: Configuration notice             ####
